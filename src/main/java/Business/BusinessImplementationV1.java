@@ -2,10 +2,20 @@ package Business;
 
 import DAO.IDao;
 
-public class BusinessImplementaionV1 implements IBusiness{
+public class BusinessImplementationV1 implements IBusiness{
 
 // Loose Coupling
     private  IDao dao;
+
+
+    public BusinessImplementationV1() {
+
+    }
+
+
+    public BusinessImplementationV1(IDao dao) {
+        this.dao = dao;
+    }
 
     /*
     * Methode that get Temperature in (F) from injected dao object methode (getData)

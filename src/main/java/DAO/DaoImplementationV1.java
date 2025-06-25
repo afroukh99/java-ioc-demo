@@ -4,7 +4,7 @@ import Business.TemperatureConverter;
 
 import java.util.Random;
 
-public class DaoImplementaionV1 implements IDao {
+public class DaoImplementationV1 implements IDao {
     @Override
     public double getData() {
         double top = TemperatureConverter.TOP_DELTA_FAHRENHEIT;
